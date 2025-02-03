@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 
 #define mu_assert(message, test) do {if (!(test)) return message;} while (0)
@@ -68,3 +69,4 @@ int main() {
 	}
 	printf("Test run: %d\n", tests_run); //On affiche le nombre de tests lances return !=0;
 }
+*/

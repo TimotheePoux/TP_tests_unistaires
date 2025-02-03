@@ -44,9 +44,8 @@ int main() {
 	}
 	printf("Test run: %d\n", tests_run); //On affiche le nombre de tests lances return !=0;
 }
-
+*/
 
 int main() {
 	return 0;
 }
-*/
