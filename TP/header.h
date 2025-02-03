@@ -5,11 +5,11 @@
 #include<string.h>
 
 struct Note {
-	int frequence;
-	int duree;
+	float frequence;
+	float duree;
 };
 
-struct Note* creerNote(int hrtz, int sec);
+struct Note* creerNote(float hrtz, float time);
 void simulerPiano(struct Note** notes, int nbr_notes);
 
 #endif

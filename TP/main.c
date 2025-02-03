@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "header.h"
 
 /*
 #define mu_assert(message, test) do {if (!(test)) return message;} while (0)
@@ -47,5 +49,13 @@ int main() {
 */
 
 int main() {
+	float frequencies[12] = { 261.63f, 277.18f, 293.66f, 311.13f, 329.63f, 349.23f, 369.99f, 392.00f, 415.30f, 440.00f, 466.16f, 493.88f };
+	float time = 400.0f;
+	struct Note** tabNotes = malloc(sizeof(struct Note*)*12);
+	for (int i = 0; i < 12; i++) {
+		tabNotes[i] = creerNote(frequencies[i], time);
+	}
+	simulerPiano(tabNotes, 12);
+	libererNotes(tabNotes,12);
 	return 0;
 }
